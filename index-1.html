@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambati Mahalakahmi Madhulika | Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#070b17;
+color:#fff;
+overflow-x:hidden;
+}
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,255,255,.15),transparent 30%),
+radial-gradient(circle at 80% 30%,rgba(255,0,255,.15),transparent 30%),
+radial-gradient(circle at 50% 80%,rgba(0,150,255,.15),transparent 30%);
+z-index:-2;
+}
+.scene{
+perspective:1200px;
+}
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+.card{
+width:min(1000px,95%);
+padding:40px;
+border-radius:30px;
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.15);
+box-shadow:0 30px 80px rgba(0,0,0,.5);
+transform-style:preserve-3d;
+animation:float 6s ease-in-out infinite;
+}
+@keyframes float{
+50%{transform:translateY(-15px) rotateX(3deg) rotateY(-3deg)}
+}
+h1{
+font-size:clamp(2.5rem,6vw,5rem);
+background:linear-gradient(90deg,#00e5ff,#9d4edd,#ff4fd8);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.subtitle{font-size:1.3rem;margin:15px 0;color:#d5d5d5}
+.tag{
+display:inline-block;
+padding:10px 18px;
+margin:5px;
+border-radius:50px;
+background:rgba(255,255,255,.08);
+}
+section{padding:80px 8%}
+.section-title{
+font-size:2.2rem;
+margin-bottom:25px;
+color:#00e5ff;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+.box{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.1);
+transition:.4s;
+}
+.box:hover{
+transform:translateY(-10px) scale(1.03);
+}
+.project{
+min-height:220px;
+}
+footer{
+text-align:center;
+padding:30px;
+color:#bbb;
+}
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 25px;
+background:linear-gradient(90deg,#00e5ff,#9d4edd);
+border-radius:40px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+<div class="scene">
+<section class="hero">
+<div class="card">
+<h1>Ambati Mahalakahmi Madhulika</h1>
+<p class="subtitle">B.Tech 2nd Year • Computer Science & Engineering</p>
+<p>App Developer • Web Developer • Creative Problem Solver</p>
+<div style="margin-top:20px">
+<span class="tag">HTML</span>
+<span class="tag">CSS</span>
+<span class="tag">JavaScript</span>
+<span class="tag">App Development</span>
+<span class="tag">UI/UX</span>
+</div>
+<a href="#projects" class="btn">Explore Portfolio</a>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">About Me</h2>
+<div class="box">
+<p>
+I am Ambati Mahalakahmi Madhulika, a passionate Computer Science and Engineering student.
+I enjoy building modern websites, mobile applications, and interactive digital experiences.
+My goal is to create technology that is visually stunning, user-friendly, and impactful.
+</p>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Skills</h2>
+<div class="grid">
+<div class="box">Frontend Development<br><br>HTML, CSS, JavaScript, Responsive Design</div>
+<div class="box">App Development<br><br>Android Apps, UI Design, Mobile Experiences</div>
+<div class="box">Programming<br><br>C, Java, Data Structures & Algorithms</div>
+<div class="box">Creative Design<br><br>3D UI Concepts, UX Design, Prototyping</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Featured Projects</h2>
+<div class="grid">
+<div class="box project">
+<h3>Smart Student Assistant</h3>
+<p>AI-powered academic assistant for notes, reminders, and learning support.</p>
+</div>
+<div class="box project">
+<h3>Campus Connect</h3>
+<p>Social networking platform for students to collaborate and share resources.</p>
+</div>
+<div class="box project">
+<h3>Health Tracker App</h3>
+<p>Mobile application for fitness, wellness, and daily habit tracking.</p>
+</div>
+<div class="box project">
+<h3>3D Portfolio Experience</h3>
+<p>Interactive portfolio inspired by gaming environments and futuristic UI.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Education</h2>
+<div class="box">
+<p><strong>B.Tech - Computer Science and Engineering</strong></p>
+<p>Currently pursuing 2nd Year</p>
+<p>Focused on software development, web technologies, and application development.</p>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Contact</h2>
+<div class="box">
+<p>Email: your-email@example.com</p>
+<p>GitHub: github.com/yourusername</p>
+<p>LinkedIn: linkedin.com/in/yourprofile</p>
+</div>
+</section>
+
+<footer>
+© 2026 Ambati Mahalakahmi Madhulika • Portfolio Website
+</footer>
+</div>
+</body>
+</html>
